@@ -83,4 +83,11 @@ EXAMPLES = '''
       - httpd
       - mariadb-server
     state: latest
+
+- name: Use YUM to Install a Package
+  ansible.builtin.package:
+    name: httpd
+    state: present
+    use: yum
+    
 '''
